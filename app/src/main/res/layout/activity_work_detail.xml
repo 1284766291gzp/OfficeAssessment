@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_247">
+
+    <include layout="@layout/top_title" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/task_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="任务标题："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_toRightOf="@id/txt1"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txt_task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_26"
+            android:text="抢单工作标题描述"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"
+            android:textColor="@color/txt_102"
+            android:text="任务描述："/>
+
+        <TextView
+            android:layout_toRightOf="@id/txt2"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txt_task_describe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_26"
+            android:text="抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述抢单工作任务描述"
+            />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="工作时限："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_toRightOf="@id/txt3"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txt_work_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_26"
+            android:text="11/1-12/1"
+            />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="分值：        "
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_toRightOf="@id/txt4"
+            android:layout_alignParentRight="true"
+            android:id="@+id/txt_scale_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_75141250"
+            android:text="10分"
+            />
+    </RelativeLayout>
+
+
+    <EditText
+        android:visibility="gone"
+        android:padding="5dp"
+        android:hint="请输入我的抢单优势"
+        android:gravity="top|left"
+        android:textSize="13sp"
+        android:textColorHint="@color/txt_163164192"
+        android:background="@drawable/et_bg_feedback"
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="198dp" />
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="5dp"
+            android:textSize="11sp"
+            android:textColor="@color/txt_102"
+            android:text="抢单时间:2017/12/12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit_getlist"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/get_list_bg"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="立即抢单"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:textSize="11sp"
+        android:textColor="@color/txt_102"
+        android:text="注：抢单之后,需要管理员审核，大概需要1-2天"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/AsukaColor">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toLeftOf="@+id/iv_message"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/search_bg"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_search"
+                android:background="@color/colorWhite"
+                android:hint="请输入工作关键词"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/sousuo" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:src="@drawable/xiaoxi" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@mipmap/ic_launcher"
+        app:delay_time="3000"
+        app:image_scale_type="center_crop"
+        app:indicator_drawable_selected="@drawable/ic_indicator_hl"
+        app:indicator_drawable_unselected="@drawable/ic_indicator_nor"
+        app:indicator_height="7dp"
+        app:indicator_margin="3dp"
+        app:indicator_width="7dp"
+        app:is_auto_play="true" />
+
+    <TextView
+        android:padding="10dp"
+        android:text="常用专区"
+        android:textSize="17sp"
+        android:textColor="@color/txt_51"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+
+            android:id="@+id/rl_regular_job"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:id="@+id/ll_01"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="15sp"
+                android:textColor="@color/txt_77"
+                android:id="@+id/iv_yuyue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="固定工作" />
+
+            <TextView
+
+                android:id="@+id/tv_bespeak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_yuyue"
+                android:layout_centerHorizontal="true"
+                android:text="Regular Job"
+                android:textColor="@color/txt_204"
+                android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye01" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_temp_work"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+            >
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_77"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="临时性工作" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_yuyue"
+                    android:layout_centerHorizontal="true"
+                    android:text="Temporary Work"
+                    android:textColor="@color/txt_204"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:id="@+id/iv"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye02" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_scale_rank"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+            >
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="分值排行榜" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_yuyue"
+                    android:layout_centerHorizontal="true"
+                    android:text="Ranking List"
+                    android:textColor="@color/txt_204"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye03" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_report_work"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+            >
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_77"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作汇报" />
+
+                <TextView
+
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_yuyue"
+                    android:layout_centerHorizontal="true"
+                    android:text="Work Report"
+                    android:textColor="@color/txt_204"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye04" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_report_work_look"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+            >
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="汇报查看" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_yuyue"
+                    android:layout_centerHorizontal="true"
+                    android:text="Report To View"
+                    android:textColor="@color/txt_204"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye05" />
+
+        </RelativeLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_exam_work"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:layout_width="170dp"
+            android:layout_height="80dp"
+            android:background="#ffffff">
+            <!--android:background="@drawable/report_work_bg"-->
+            >
+            <LinearLayout
+                android:paddingLeft="15dp"
+                android:layout_centerVertical="true"
+
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textSize="15sp"
+                    android:textColor="@color/txt_77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="工作审核" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_yuyue"
+                    android:layout_centerHorizontal="true"
+                    android:text="Audit Work"
+                    android:textColor="@color/txt_204"
+                    android:textSize="10sp" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/shouye06" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/img_raffle"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/choujiang"
+        android:scaleType="centerCrop"
+        android:layout_width="351dp"
+        android:layout_height="80dp" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

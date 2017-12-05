@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_247">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#ffffff">
+        <ImageView
+            android:id="@+id/BackImgBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/fanhui02"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:layout_alignParentLeft="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="15sp"
+            android:textColor="@color/txt_75141250"
+            android:text="搜索"
+            android:paddingLeft="10dp"
+            android:paddingRight="15dp"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:id="@+id/tv_right"/>
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/BackImgBtn"
+            android:layout_toLeftOf="@+id/tv_right"
+            android:background="@drawable/et_bg_shouye_sousuo"
+            android:orientation="horizontal"
+            android:padding="2dp">
+
+            <EditText
+                android:textColorHint="@color/txt_144"
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_search"
+                android:background="@null"
+                android:hint="请输入工作关键词"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/img_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="3dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="3dp"
+                android:src="@drawable/sousuo" />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/BackImgBtn"
+            android:layout_toLeftOf="@id/tv_right"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/et_bg">
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/sousuo"
+                android:layout_marginLeft="5dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@null"
+                android:lines="1"
+                android:editable="false"
+                android:hint="请输入工作关键词"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/colorWhite"
+        app:tabIndicatorColor="@color/AsukaColor"
+        app:tabSelectedTextColor="@color/AsukaColor"
+        app:tabTextColor="@color/colorTabText" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+
+
+</LinearLayout>

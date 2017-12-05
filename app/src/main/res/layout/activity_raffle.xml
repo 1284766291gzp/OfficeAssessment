@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choujiang_bg">
+
+    <include layout="@layout/top_title" />
+
+    <TextView
+
+        android:background="@drawable/choujiang_bg1"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="top|center_horizontal"
+        android:textColor="@color/colorWhite"
+        android:textSize="13sp"
+        android:text="您此月没有抽奖机会，再接再厉!"
+        android:layout_width="220dp"
+        android:layout_height="28dp" />
+    <RelativeLayout
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:src="@drawable/dipan"
+            android:layout_height="wrap_content" />
+
+
+    <com.lxkj.officeassessment.app.view.LotteryView
+        android:layout_margin="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/nl"
+        android:layout_below="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:padding="20dp"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:textColor="@color/txt_77"
+        android:textSize="13sp"
+        android:text="活动说明："
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/txt_77"
+            android:textSize="13sp"
+            android:text="1、每月一次抽奖，且必须是积分排行前五名的人才有此资格"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+</LinearLayout>
+</FrameLayout>

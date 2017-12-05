@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_247">
+
+    <include layout="@layout/top_title"
+        android:id="@+id/title_layout"
+        />
+
+    <com.example.xrecyclerview.XRecyclerView
+        android:layout_below="@+id/title_layout"
+        android:id="@+id/recyclerview"
+        android:layout_above="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp" />
+
+
+
+
+
+        <RelativeLayout
+            android:layout_alignParentBottom="true"
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:padding="10dp">
+
+            <EditText
+                android:layout_marginLeft="10dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/et_search"
+                android:layout_width="260dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/img_search"
+                android:background="@drawable/et_bg_send"
+                android:hint="有什么想说的"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:textSize="13sp" />
+
+            <TextView
+              android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="13sp"
+                android:text="发送"
+                android:id="@+id/img_search"
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_send_bg" />
+
+        </RelativeLayout>
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lxkj.officeassessment">
+
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 从sdcard中读取数据的权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- 往sdcard中写入数据的权限 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- 用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 这个权限用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <!-- 用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- SD卡读取权限，用户写入离线定位数据-->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".app.ui.MainActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+
+        <!--登录-->
+
+        <activity android:name=".app.ui.login.LoginActivity"
+            android:screenOrientation="portrait">
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <!--首页-->
+
+
+        <!--消息-->
+        <activity android:name=".app.ui.shouye.MessageActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页搜索工作-->
+        <activity android:name=".app.ui.shouye.SearchWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--抢单详情-->
+        <activity android:name=".app.ui.getlist.GetListDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--抢单详情-->
+        <activity android:name=".app.ui.shouye.TempWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页分值排行榜-->
+        <activity android:name=".app.ui.shouye.ScaleRankActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页工作汇报-->
+        <activity android:name=".app.ui.shouye.ReportWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页固定工作-->
+        <activity android:name=".app.ui.shouye.RegularJobActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--添加临时工作-->
+        <activity android:name=".app.ui.shouye.AddTempWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--汇报查看-->
+        <activity android:name=".app.ui.shouye.ReportWorkLookActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--添加工作汇报-->
+        <activity android:name=".app.ui.shouye.AddReportWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的抽奖-->
+        <activity android:name=".app.ui.shouye.RaffleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--首页工作详情-->
+        <activity android:name=".app.ui.shouye.ShouyeWorkDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--工作审核-->
+        <activity android:name=".app.ui.shouye.ExamWorkActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--工作汇总详情-->
+        <activity android:name=".app.ui.shouye.WorkReportDetailActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+
+
+        <!--我的-->
+        <!--编辑资料-->
+        <activity android:name=".app.ui.mine.EditUserinfoActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 我的分值-->
+        <activity android:name=".app.ui.mine.ScaleValueActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 我的抢单-->
+        <activity android:name=".app.ui.mine.MyGetListActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 我的抽奖-->
+        <activity android:name=".app.ui.mine.MyRaffleActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 我的收藏-->
+        <activity android:name=".app.ui.mine.MyCollectActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 设置-->
+        <activity android:name=".app.ui.mine.SettingActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--我的 意见反馈-->
+        <activity android:name=".app.ui.mine.FeedbackActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+
+
+        <!--绑定手机号-->
+        <activity android:name=".app.ui.login.BindPhoneActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--换绑手机号-->
+        <activity android:name=".app.ui.login.ChangeBindPhoneActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--修改登陆密码-->
+        <activity android:name=".app.ui.login.ModifyLoginPswdActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--忘记密码-->
+        <activity android:name=".app.ui.login.ForgetPswdActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <!--注册-->
+        <activity android:name=".app.ui.login.RegisterActivity"
+            android:screenOrientation="portrait">
+        </activity>
+
+
+    </application>
+
+</manifest>

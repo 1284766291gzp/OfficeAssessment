@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_247"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title" />
+
+    <LinearLayout
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:background="@color/colorWhite"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            >
+            <TextView
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:id="@+id/tv_yan"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:text="头像"
+                android:textColor="@color/txt_26"
+                android:textSize="15sp"  />
+
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/HeadImg"
+                android:layout_toLeftOf="@+id/image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/touxiang_wode"
+                android:scaleType="fitXY"
+                app:riv_corner_radius="10dp"/>
+
+            <ImageView
+                android:layout_marginLeft="14dp"
+                android:id="@+id/image"
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/jinru"/>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="姓名"
+                android:textColor="@color/txt_26"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/txt_86114197"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:text="张三"
+             />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="职位"
+                android:textColor="@color/txt_26"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_centerVertical="true"
+
+                android:textColor="@color/txt_86114197"
+                android:textSize="15sp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="员工"
+                />
+        </RelativeLayout>
+
+
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_change_bind_phone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="换绑手机号"
+                android:textColor="@color/txt_26"
+                android:textSize="15sp"  />
+
+            <ImageView
+                android:layout_marginRight="15dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+              android:src="@drawable/jinru" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_modify_login_pswd"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:text="修改登录密码"
+                android:textColor="@color/txt_26"
+                android:textSize="15sp"  />
+
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/jinru"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_submit"
+        android:layout_width="351dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/button_click"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="绑定"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+</LinearLayout>

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_247">
+
+    <include layout="@layout/top_title" />
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+
+        android:id="@+id/task_name_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="任务标题："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <EditText
+            android:padding="10dp"
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:layout_toRightOf="@id/txt1"
+            android:id="@+id/txt_task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:textColor="@color/txt_153153153"
+            android:hint="请输入任务标题"
+            />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:background="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+        <TextView
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:id="@+id/txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:textSize="15sp"
+            android:textColor="@color/txt_102"
+            android:text="任务描述："/>
+
+        <EditText
+            android:layout_centerVertical="true"
+            android:background="@color/colorWhite"
+            android:padding="10dp"
+            android:layout_toRightOf="@id/txt2"
+            android:id="@+id/txt_task_describe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_26"
+            android:hint="请输入任务描述"
+            />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="起始时间："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_toRightOf="@id/txt3"
+            android:id="@+id/txt_work_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_153153153"
+            android:text="请选择起始时间"
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jinru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:paddingRight="20dp"
+            android:id="@+id/txt4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="结束时间："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <TextView
+            android:padding="10dp"
+            android:layout_toRightOf="@id/txt4"
+            android:id="@+id/txt_scale_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:textColor="@color/txt_153153153"
+            android:text="请选择结束时间"
+            />
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/jinru"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <RelativeLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:paddingRight="15dp"
+            android:id="@+id/txt5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="期望工作分："
+            android:textColor="@color/txt_102"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_toRightOf="@+id/txt5"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="10分"
+                    android:textColor="@color/txt_75141250"
+                    android:textSize="15sp" />
+
+
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/ll3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="@drawable/report_work_bg"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_reduce"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/num"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="—" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorLine" />
+
+                        <EditText
+                            android:id="@+id/tv_num"
+                            android:layout_width="50dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_reduce"
+                            android:background="@null"
+                            android:gravity="center"
+                            android:text="1"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/colorLine" />
+
+
+                        <TextView
+                            android:id="@+id/tv_plus"
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_toRightOf="@+id/tv_num"
+                            android:gravity="center"
+                            android:text="+"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+
+
+
+            </RelativeLayout>
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/rb_1"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_51"
+                    android:text="  10分"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_2"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_51"
+                    android:text="  20分"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rb_3"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:textSize="13sp"
+                    android:textColor="@color/txt_51"
+                    android:text="  30分"
+                    style="@style/CustomCheckboxTheme"
+                    android:layout_marginLeft="25dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:visibility="gone"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/submit_getlist"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/get_list_bg"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="立即抢单"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+    <TextView
+        android:visibility="gone"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:textSize="11sp"
+        android:textColor="@color/txt_102"
+        android:text="注：抢单之后,需要管理员审核，大概需要1-2天"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</LinearLayout>

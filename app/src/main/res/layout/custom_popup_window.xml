@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal">
+
+    <LinearLayout
+        android:background="#ffffff"
+        android:id="@+id/id_pop_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/txt_51"
+            android:id="@+id/id_btn_take_photo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="拍照"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="0.5dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/txt_51"
+            android:id="@+id/id_btn_select"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="本地相册"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:background="@color/line230"
+            android:layout_height="5dp"/>
+
+        <TextView
+            android:gravity="center"
+            android:textSize="19sp"
+            android:textColor="@color/txt_51"
+            android:id="@+id/id_btn_cancelo"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:text="取消"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

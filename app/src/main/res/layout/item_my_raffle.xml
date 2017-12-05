@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="129dp"
+    android:layout_marginTop="5dp"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+  <ImageView
+      android:layout_alignParentLeft="true"
+      android:id="@+id/image"
+      android:src="@drawable/image1"
+      android:layout_centerVertical="true"
+      android:layout_width="65dp"
+      android:layout_height="65dp" />
+
+        <TextView
+            android:layout_marginLeft="13dp"
+            android:layout_toRightOf="@+id/image"
+            android:id="@+id/txt_work_content_1"
+            android:layout_centerVertical="true"
+            android:text="小米电饭煲"
+            android:textSize="16sp"
+            android:textColor="@color/txt_26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:gravity="center"
+                android:background="@drawable/get_list_bg"
+                android:layout_alignParentRight="true"
+                android:id="@+id/txt_work_content_2"
+                android:layout_centerVertical="true"
+                android:text="未领取"
+                android:textSize="13sp"
+                android:textColor="@color/colorWhite"
+                android:layout_width="81dp"
+                android:layout_height="29dp" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+        <View
+            android:background="@color/line230"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+    <RelativeLayout
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_time_win_the_prize"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="中奖时间：2017/11/1 18:30:01"
+            android:textColor="@color/txt_153153153"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_time_award"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="领奖时间：2017/11/1 18:30:01"
+            android:textColor="@color/txt_153153153"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

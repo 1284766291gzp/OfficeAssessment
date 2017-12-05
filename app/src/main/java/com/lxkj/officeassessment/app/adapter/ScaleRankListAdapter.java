@@ -1,0 +1,131 @@
+package com.lxkj.officeassessment.app.adapter;
+
+import android.content.Context;
+import android.support.v7.widget.RecyclerView;
+import android.text.TextUtils;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+
+
+import com.lxkj.officeassessment.R;
+import com.makeramen.roundedimageview.RoundedImageView;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+
+/**
+ * 预约车
+ * Created by Slingge on 2017/5/31 0031.
+ */
+
+public class ScaleRankListAdapter extends RecyclerView.Adapter<ScaleRankListAdapter.MyViewHolder>{
+
+    private Context context;
+    private List<String> scaleRankList;
+
+    public ScaleRankListAdapter(Context context, List<String> scaleRankList) {
+        this.context = context;
+        this.scaleRankList = scaleRankList;
+
+    }
+
+
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(context).inflate(R.layout.item_scale_rank, parent, false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(final MyViewHolder holder, final int position) {
+//        final TaskDetailBean.TaskDiscussBean bean = carList.get(position);
+//
+//        holder.txt_name.setText(bean.username);
+//        holder.txt_content.setText(bean.discussContent);
+//        holder.txt_time.setText(bean.time);
+//        if (!TextUtils.isEmpty(bean.username)) {
+//            holder.txt_name_1.setText(bean.username.substring(bean.username.length()-2, bean.username.length()));
+//        }
+
+
+
+    }
+
+    @Override
+    public int getItemCount() {
+        return scaleRankList.size();
+    }
+
+
+    /**
+     * 提供精确加法计算的add方法
+     *
+     * @param value1 被加数
+     * @param value2 加数
+     * @return 两个参数的和
+     */
+    public double add(double value1, double value2) {
+        BigDecimal b1 = new BigDecimal(String.valueOf(value1));
+        BigDecimal b2 = new BigDecimal(String.valueOf(value2));
+        return b1.add(b2).doubleValue();
+    }
+
+    /**
+     * 提供精确减法运算的sub方法
+     *
+     * @param value1 被减数
+     * @param value2 减数
+     * @return 两个参数的差
+     */
+    public double sub(double value1, double value2) {
+        BigDecimal b1 = new BigDecimal(String.valueOf(value1));
+        BigDecimal b2 = new BigDecimal(String.valueOf(value2));
+        return b1.subtract(b2).doubleValue();
+    }
+
+
+    public class MyViewHolder extends RecyclerView.ViewHolder {
+        TextView txt_num, txt_content, txt_sacle;
+        RoundedImageView img_head;
+
+
+        public MyViewHolder(View itemView) {
+            super(itemView);
+            txt_num = (TextView) itemView.findViewById(R.id.txt_num);
+            txt_content = (TextView) itemView.findViewById(R.id.txt_content);
+            txt_sacle = (TextView) itemView.findViewById(R.id.txt_sacle);
+            img_head=(RoundedImageView)itemView.findViewById(R.id.img_head);
+        }
+    }
+
+
+//    private void delCar(String shoppingCarId, final int position) {
+//        ProgressDialogs.showProgressDialog(context, "正在删除...");
+//        String json = "{\"cmd\":\"deleteConventionCart\",\"uid\":\"" + MyApplication.uId + "\",\"shoppingCarId\":\"" + shoppingCarId + "\"}";
+//        OkHttpUtils.post().url(MyApplication.Url).addParams("json", json).build().execute(new StrCallback() {
+//            @Override
+//            public void onResponse(String response, int id) {
+//                super.onResponse(response, id);
+//                try {
+//                    JSONObject obj = new JSONObject(response);
+//                    if (obj.getString("result").equals("0")) {
+//                        ToastUtil.showToast("删除成功");
+//                        BookingCarFragment.carList.remove(position);
+//                        intent = new Intent("OrderCar");
+//                        context.sendBroadcast(intent);
+//                        notifyDataSetChanged();
+//                    } else {
+//                        ToastUtil.showToast(obj.getString("resultNote"));
+//                    }
+//                } catch (JSONException e) {
+//                    e.printStackTrace();
+//                }
+//            }
+//        });
+//    }
+
+
+}

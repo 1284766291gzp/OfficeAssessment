@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@drawable/report_work_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="张三"
+            android:textSize="14sp"
+            android:textColor="@color/txt_5887126"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="19dp"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        <TextView
+
+
+            android:id="@+id/txt_work_content_1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:text="工作内容工作内容"
+            android:textSize="15sp"
+            android:textColor="@color/txt_51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginTop="11dp"
+                android:id="@+id/txt_work_content_2"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:text="工作内容工作内容工作内容工作内容工作内容"
+                android:textSize="13sp"
+                android:textColor="@color/txt_77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+            <ImageView
+                android:layout_marginRight="12dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/jinru"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+
+
+
+        <View
+            android:layout_marginTop="15dp"
+            android:background="@color/line230"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+
+
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="12dp"
+            android:gravity="right|center_vertical"
+            android:layout_centerVertical="true"
+            android:id="@+id/txt_date"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="提交日期：2017/11/1 18:30:01"
+            android:textColor="@color/txt_153153153"
+            android:textSize="13sp" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

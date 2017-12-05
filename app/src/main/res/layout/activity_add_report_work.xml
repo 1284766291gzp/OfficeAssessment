@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_247">
+
+    <include layout="@layout/top_title" />
+
+
+    <View
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:background="@color/line230"
+        android:layout_height="0.5dp"/>
+
+    <EditText
+        android:gravity="top|left"
+        android:background="@drawable/report_work_bg"
+        android:textSize="14sp"
+        android:textColor="@color/txt_163164192"
+        android:padding="8dp"
+        android:hint="今天工作中遇到的困难或者总结都可以提交噢"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="555dp" />
+
+
+
+
+</LinearLayout>

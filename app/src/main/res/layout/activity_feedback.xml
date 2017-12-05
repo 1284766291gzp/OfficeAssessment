@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_247"
+    android:orientation="vertical">
+
+    <include layout="@layout/top_title" />
+
+
+        <EditText
+
+           android:padding="5dp"
+            android:hint="欢迎吐槽噢"
+            android:gravity="top|left"
+            android:textSize="13sp"
+            android:textColorHint="@color/txt_163164192"
+            android:background="@drawable/et_bg_feedback"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="225dp" />
+
+
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_submit"
+        android:layout_width="330dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_click"
+        android:gravity="center"
+        android:padding="9dp"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp" />
+
+
+
+</LinearLayout>
